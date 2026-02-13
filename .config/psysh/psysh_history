@@ -1,0 +1,14 @@
+Cache::pu('teste', 'funciona karai', 10);
+Cache::put('teste', 'funciona karai', 10);
+Cache::get('teste');
+Cache::get('teste');
+Cache::put('teste', 'funciona', 10)
+Cache::put('teste', 'f
+Cache::get('teste');
+Cache::get('teste');
+php artisan config:clear
+exit
+Cache::put('teste', 'funcionamtkarai', 10);
+Cache::get('teste');
+config('cache.default'');
+config('cache.default');
