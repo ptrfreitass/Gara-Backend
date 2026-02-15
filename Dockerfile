@@ -92,10 +92,10 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 FROM base AS production
 
-COPY docker/php.ini /usr/local/etc/php/conf.d/99-custom.ini
-COPY docker/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY backend/php.ini /usr/local/etc/php/conf.d/99-custom.ini
+COPY backend/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 
-COPY --chown=sail:sail . /var/www
+COPY --chown=sail:sail ./backend /var/www
 
 RUN composer install --no-dev --no-interaction --no-progress --optimize-autoloader --classmap-authoritative \
     && composer clear-cache

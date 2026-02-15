@@ -45,7 +45,7 @@ class VerifyEmailCode extends Notification implements ShouldQueue
         ]);
 
         return (new MailMessage)
-            ->subject('Gara - Seu código de verificação')
+            ->subject('Gara - Seu codigo de verificacao')
             ->greeting('Olá! Agradecemos por se registrar, agora falta pouco para organizar sua vida!')
             ->line('Seu código de verificação é para acesso ao sistema Gara é:')
             ->line('**' . $this->verificationCode . '**')
