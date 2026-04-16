@@ -1,0 +1,24 @@
+# docker/backend/.dockerignore (ou gara_backend/.dockerignore)
+node_modules
+vendor
+.git
+.gitignore
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+storage/*.key
+.phpunit.cache
+.DS_Store
+Thumbs.db
+tests/
+.editorconfig
+.styleci.yml
+*.md
+docker-compose*.yml
+Dockerfile
+.dockerignore
